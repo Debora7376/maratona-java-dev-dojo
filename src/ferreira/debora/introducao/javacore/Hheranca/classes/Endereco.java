@@ -3,7 +3,6 @@ package ferreira.debora.introducao.javacore.Hheranca.classes;
 public class Endereco {
     private String rua;
     private String bairro;
-
     public String getRua() {
         return rua;
     }
