@@ -11,6 +11,7 @@ public class FuncionarioTeste {
         vendedor.calculaSalario();
         gerente.calculaSalario();
         System.out.println(vendedor);
+        System.out.println("------------------------------------");
         System.out.println(gerente);
     }
 }
