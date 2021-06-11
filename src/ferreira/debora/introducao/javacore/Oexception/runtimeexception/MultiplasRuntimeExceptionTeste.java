@@ -1,6 +1,7 @@
 package ferreira.debora.introducao.javacore.Oexception.runtimeexception;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class MultiplasRuntimeExceptionTeste {
@@ -8,26 +9,17 @@ public class MultiplasRuntimeExceptionTeste {
         // Mais generico por ultimo da lista
         try {
             throw new RuntimeException();
-        } catch (ArrayIndexOutOfBoundsException e) {
+        } catch (IllegalArgumentException | IndexOutOfBoundsException | ArithmeticException e) {
             System.out.println("Dentro do ArrayIndexOutOfBoundsException");
-        } catch (IllegalArgumentException e) {
-            System.out.println(" Dentro do IllegalArgumentException");
-        } catch (ArithmeticException e) {
-            System.out.println("Dentro do ArithmeticException");
-        }catch (RuntimeException e) {
-            System.out.println("Dentro do RuntimeException");
         }
         System.out.println("Final do programa");
 
        try {
            talvezLanceException();
-       }catch (SQLException e){
-
-       }catch (FileNotFoundException e){
-
+       } catch (Exception e) {
        }
     }
-    private static void talvezLanceException() throws SQLException, FileNotFoundException {
+    private static void talvezLanceException() throws SQLException, SQLException, IOException {
 
     }
 }
