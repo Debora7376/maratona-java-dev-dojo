@@ -9,7 +9,7 @@ public class LocaleTeste {
         // ISO 639 pt= portugues, BR= Brasil, en = ingles, ES = Estados Unidos
         Locale locItaly = new Locale("it", "IT");
         Locale locSuica = new Locale("it", "CH");
-        Locale locIndia = new Locale("h1", "IN");
+        Locale locIndia = new Locale("hi", "IN");
         Locale locJapao = new Locale("ja");
 
         Calendar c = Calendar.getInstance();

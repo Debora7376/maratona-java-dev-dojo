@@ -12,9 +12,9 @@ public class NumberFormatTeste {
         Locale locIT = new Locale("it");
         NumberFormat[] nfa = new NumberFormat[4];
         nfa[0] = NumberFormat.getInstance();
-        nfa[1] = NumberFormat.getInstance();
-        nfa[2] = NumberFormat.getInstance();
-        nfa[3] = NumberFormat.getInstance();
+        nfa[1] = NumberFormat.getCurrencyInstance(locFR);
+        nfa[2] = NumberFormat.getCurrencyInstance(locIT);
+        nfa[3] = NumberFormat.getCurrencyInstance(locJP);
         for (NumberFormat nf : nfa) {
             System.out.println(nf.format(valor));
         }
