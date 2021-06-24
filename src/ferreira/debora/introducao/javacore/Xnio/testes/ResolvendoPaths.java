@@ -1,4 +1,4 @@
-package ferreira.debora.introducao.javacore.Wio.testes;
+package ferreira.debora.introducao.javacore.Xnio.testes;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
