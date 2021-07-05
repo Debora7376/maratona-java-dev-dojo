@@ -15,6 +15,10 @@ class FindAllTest extends SimpleFileVisitor<Path>{
     }
 }
 public class PathMatcherTeste {
+    public PathMatcherTeste() {
+        super();
+    }
+
     public static void main(String[] args) throws IOException {
         Path path1 = Paths.get("pasta/subpasta/subsubpasta/file.bkp");
         Path path2 = Paths.get("file.bkp");
