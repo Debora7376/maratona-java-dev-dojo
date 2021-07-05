@@ -28,7 +28,7 @@ public class AtributosBasicosTeste {
         System.out.println(Files.getLastModifiedTime(path));
         Files.deleteIfExists(path);
 
-        path = Paths.get("src\\br\\com\\abc\\javacore\\Aintroducaoclasses\\classes\\Carro.java");
+        path = Paths.get("src/ferreira/debora/introducao/javacore/Aintroducaoclasses/classes/Carro.java");
         System.out.println(Files.isReadable(path));
         System.out.println(Files.isWritable(path));
         System.out.println(Files.isExecutable(path));
