@@ -1,4 +1,4 @@
-package ferreira.debora.introducao.javacore.Zcolecoes.teste;
+package ferreira.debora.introducao.javacore.Zcolecoes.testes;
 
 import ferreira.debora.introducao.javacore.Zcolecoes.classes.Celular;
 

@@ -1,4 +1,4 @@
-package ferreira.debora.introducao.javacore.Zcolecoes.teste;
+package ferreira.debora.introducao.javacore.Zcolecoes.testes;
 
 import java.util.ArrayList;
 import java.util.List;
