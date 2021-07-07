@@ -2,7 +2,6 @@ package ferreira.debora.introducao.javacore.Yserializacao.classes;
 
 import ferreira.debora.introducao.javacore.Yserializacao.classes.Aluno;
 import ferreira.debora.introducao.javacore.Yserializacao.classes.Turma;
-
 import java.io.*;
 
 public class SerializacaoTeste {
