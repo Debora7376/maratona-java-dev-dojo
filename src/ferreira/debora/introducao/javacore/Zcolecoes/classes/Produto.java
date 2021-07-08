@@ -1,6 +1,8 @@
 package ferreira.debora.introducao.javacore.Zcolecoes.classes;
 
-public class Produto implements Comparable<Produto> {
+import java.util.Comparator;
+
+public class Produto implements Produtos {
 
     private String serialNumber;
     private String nome;
@@ -10,6 +12,11 @@ public class Produto implements Comparable<Produto> {
         this.serialNumber = serialNumber;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    @Override
+    public int compare(Produto o1, Produto o2) {
+        return 0;
     }
 
     @Override
@@ -34,26 +41,32 @@ public class Produto implements Comparable<Produto> {
                 '}';
     }
 
+    @Override
     public String getSerialNumber() {
         return serialNumber;
     }
 
+    @Override
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    @Override
     public Double getPreco() {
         return preco;
     }
 
+    @Override
     public void setPreco(Double preco) {
         this.preco = preco;
     }
