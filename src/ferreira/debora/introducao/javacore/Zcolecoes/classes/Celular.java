@@ -2,7 +2,7 @@ package ferreira.debora.introducao.javacore.Zcolecoes.classes;
 
 import java.util.Comparator;
 
-public class Celular implements Comparator<Celular>{
+public class Celular {
     private String nome;
     private String IMEI;
 
@@ -26,11 +26,6 @@ public class Celular implements Comparator<Celular>{
     @Override
     public int hashCode() {
         return IMEI != null ? IMEI.hashCode() : 1;
-    }
-
-    @Override
-    public int compare(Celular o1, Celular o2) {
-        return 0;
     }
 
     @Override

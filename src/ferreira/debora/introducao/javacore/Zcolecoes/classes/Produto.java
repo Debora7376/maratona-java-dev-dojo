@@ -1,12 +1,11 @@
 package ferreira.debora.introducao.javacore.Zcolecoes.classes;
 
-import java.util.Comparator;
-
-public class Produto implements Produtos {
+public class Produto implements Comparable<Produto>{
 
     private String serialNumber;
     private String nome;
     private Double preco;
+    private int quantidade;
 
     public Produto(String serialNumber, String nome, double preco) {
         this.serialNumber = serialNumber;
@@ -14,17 +13,22 @@ public class Produto implements Produtos {
         this.preco = preco;
     }
 
-    @Override
-    public int compare(Produto o1, Produto o2) {
-        return 0;
+    public Produto(String serialNumber, String nome, Double preco, int quantidade) {
+        this.serialNumber = serialNumber;
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Produto produto = (Produto) o;
-        return serialNumber != null ? serialNumber .equals(produto.serialNumber) : produto.serialNumber == null;
+
+        return serialNumber != null ? serialNumber.equals(produto.serialNumber) : produto.serialNumber == null;
+
     }
 
     @Override
@@ -37,45 +41,50 @@ public class Produto implements Produtos {
         return "Produto{" +
                 "serialNumber='" + serialNumber + '\'' +
                 ", nome='" + nome + '\'' +
-                ", preco='" + preco + '\'' +
+                ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
-    @Override
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
 
-    @Override
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
-    @Override
     public String getNome() {
         return nome;
     }
 
-    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    @Override
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    @Override
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
     @Override
     public int compareTo(Produto outroObjeto) {
-        //negativo se thisObject < outroObjeto
-        //Zero se thisObject == outroObjeto
-        //Positivo se thisObject > outroObjeto
-        return 0;
+
+        return this.preco.compareTo(outroObjeto.getPreco());
     }
 }
